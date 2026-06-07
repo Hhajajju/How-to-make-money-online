@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #00c6ff, #ff0066);
+            background-color: #000; /* Black background */
             color: white;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             text-align: center;
         }
 
@@ -22,6 +18,7 @@
             width: 90%;
             max-width: 800px;
             padding: 20px;
+            margin: 0 auto;
         }
 
         h1 {
@@ -36,23 +33,21 @@
             text-decoration: underline;
         }
 
-        .image-container {
-            margin: 30px 0;
-        }
-
         .image-container img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
+            display: block;
         }
 
         .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
+            display: block; /* Full width block */
+            width: 100%; /* Make button as wide as container */
+            padding: 25px 0; /* Make button tall */
+            margin: 0; /* Remove any gap */
             background-color: #ff0066;
             color: white;
-            font-size: 1.2rem;
+            font-size: 1.5rem; /* Large font */
             font-weight: bold;
             text-decoration: none;
             border-radius: 8px;
@@ -64,6 +59,7 @@
             background-color: #ff3385;
         }
 
+        /* Mobile adjustments */
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.5rem;
@@ -72,8 +68,8 @@
                 font-size: 1.2rem;
             }
             .button {
-                padding: 12px 25px;
-                font-size: 1rem;
+                padding: 20px 0;
+                font-size: 1.2rem;
             }
         }
     </style>
