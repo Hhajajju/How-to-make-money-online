@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #000; /* Black background */
+            background-color: #000;
             color: white;
             margin: 0;
             padding: 0;
@@ -41,13 +41,13 @@
         }
 
         .button {
-            display: block; /* Full width block */
-            width: 100%; /* Make button as wide as container */
-            padding: 25px 0; /* Make button tall */
-            margin: 10px 0 0 0; /* Small gap between buttons */
+            display: block;
+            width: 100%;
+            padding: 25px 0;
+            margin: 20px 0 0 0;
             background-color: #ff0066;
             color: white;
-            font-size: 1.5rem; /* Large font */
+            font-size: 1.5rem;
             font-weight: bold;
             text-decoration: none;
             border-radius: 8px;
@@ -59,7 +59,10 @@
             background-color: #ff3385;
         }
 
-        /* Mobile adjustments */
+        .ad-container {
+            margin-top: 20px;
+        }
+
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.5rem;
@@ -70,6 +73,9 @@
             .button {
                 padding: 20px 0;
                 font-size: 1.2rem;
+            }
+            .ad-container iframe {
+                height: 250px;
             }
         }
     </style>
@@ -89,10 +95,18 @@
             CLICK TO WATCH NOW
         </a>
 
-        <!-- Ad Button -->
-        <a href="https://loyal-product.com/dNmMFMz.dwG/NTvkZ/GZUG/qekm/9/uFZYUTlTk/PNT/c/xBM/TTcnzoNkDUkEtTNWzeE/xyNhzxMJ1XMCww" class="button">
-            CLICK HERE FOR MORE TRENDING VIDEOS 
-        </a>
+        <!-- Embedded Video Ad -->
+        <div class="ad-container">
+            <iframe 
+                src="https://loyal-product.com/dNmMFMz.dwG/NTvkZ/GZUG/qekm/9/uFZYUTlTk/PNT/c/xBM/TTcnzoNkDUkEtTNWzeE/xyNhzxMJ1XMCww" 
+                width="100%" 
+                height="400" 
+                frameborder="0" 
+                allow="autoplay; fullscreen" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
     </div>
 
 </body>
