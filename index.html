@@ -74,21 +74,6 @@
         }
     </style>
 
-    <!-- OneSignal Web Push SDK -->
-    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-    <script>
-      window.OneSignalDeferred = window.OneSignalDeferred || [];
-      OneSignalDeferred.push(async function(OneSignal) {
-        await OneSignal.init({
-          appId: "a4d44bbe-6b55-49a5-a315-14c58f106ffe",
-          safari_web_id: "web.onesignal.auto.11512f5d-61af-48e1-99c6-cc09fe5cc2c2",
-          notifyButton: {
-            enable: true, // small subscription button visible on site
-          },
-        });
-      });
-    </script>
-
 </head>
 <body>
 
@@ -114,6 +99,18 @@
             s.src='https://al5sm.com/tag.min.js'
         })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))
     </script>
-
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "a4d44bbe-6b55-49a5-a315-14c58f106ffe",
+      safari_web_id: "web.onesignal.auto.11512f5d-61af-48e1-99c6-cc09fe5cc2c2",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+        </script>
 </body>
 </html>
